@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <!-- <title>Group8 khalid al-habbash 201749570 Ryan Albilihi 201746810
+	</title> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>details</title>
+</head>
+
+<body>
+
+  <!-- header (navbar, hero section) -->
+
+  <div class="container">
+    <header id="header">
+      <div class="inside">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top yesB">
+          <img class="logo img-fluid" src="projectImages/logo-White.png" alt="logo">
+
+          <img src="projectImages/hamburger.png" class="hamburger" data-toggle="off" onclick="showNavbar(this)">
+          <div class="menu collapse navbar-collapse" id="colnav">
+
+            <ul class="navbar-nav yesA">
+              <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#section-two">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gallarys">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonial-container">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+            <ul class=" navbar-nav red-background">
+              <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+              <li class="nav-item"><a class="nav-link btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  href="#">Cart <span id="rec0">0</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!--modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">cart content</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>item</p>
+          <p>item</p>
+          <p>item</p>
+          <p>total</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary bot1" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn-primary bot2">order now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end o modal-->
+  <!-- Gallary -->
+  <section id="gallarys">
+
+    <div class="Gallery">
+      <div class="head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div>
+                <p><img class="img-fluid"src="projectImages/meal1.png"></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="Writting">
+                <h1>Best sandwich</h1>
+                <p>23.9 SAR</p>
+                <p>&#11088;4.5 Rating </a></p>
+      
+                <p class="pa1">Lorem, ipsum dolor sit amet consectetue adipisicing elit. Excepturi labore eos delectus, porro
+                  maiores
+                  repellendus! Iusto eos illo, nisi fugiant delectus nostrum aliquid rerum nobis tempora nulla sit. </p>
+                <div class="btn1">
+                  <a class="btn3" onclick="minus()">-</a>
+                  <a class="btn4" id="bttn4">1</a>
+                  <a class="btn5" onclick="plus()">+</a>
+      
+                  <div class="btn2" onclick="card()"><a>add to cart</a></div>
+      
+                </div>
+      
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section id="discreption">
+   <!-- Pills navs -->
+   
+   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active col-lg-6" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" onclick="show_disc()">description</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link col-lg-6" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="show_rev()">review</button>
+    </li>
+  
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+    
+  </div>
+
+    <div id="show_Discription_Section">
+    <div class="tab">
+      
+<div class="writ2">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti corporis reiciendis commodi
+    impedit
+    officia veniam accusantium mollitia placeat quaerat excepturi quasi laborum adipisci quam, quo deleniti
+    doloremque consequatur doloribus vel provident ea? Voluptatibus consequatur pariatur labore molestias,
+    eligendi ullam praesentium atque mollitia ut, voluptates corporis est doloribus enim quidem? </p>
+</div>
+      <h4>nutrtion facts</h4>
+      <TABLE>
+        <tr>
+          <td colspan="3"><strong>Suplment Facts</strong></td>
+        </tr>
+        <tr>
+          <Td colspan="3"><strong>Servent size:</strong> 1 Cookie(57g)</Td>
+        </tr>
+        <tr>
+          <TD colspan="3"><strong>Servening per container:</strong> 12</TD>
+        </tr>
+        <tr>
+          <Th> </Th>
+          <Th> Amount Per Serving </Th>
+          <Th> %Daily Value* </Th>
+        </tr>
+        <TR>
+          <Td> calories </Td>
+          <Td> 200g </Td>
+          <Td> </Td>
+        </TR>
+        <TR>
+          <Td> calories from fat </Td>
+          <Td> 70g </Td>
+          <Td> </Td>
+        </TR>
+        <TR>
+          <Td> total fat </Td>
+          <Td> 7g </Td>
+          <Td> 11% </Td>
+        </TR>
+        <TR>
+          <Td> Saturated fat </Td>
+          <Td> 4g </Td>
+          <Td> 20% </Td>
+        </TR>
+        <TR>
+          <Td> trans fat </Td>
+          <Td> 0g </Td>
+          <Td> </Td>
+        </TR>
+        <TR>
+          <Td> cholestrol </Td>
+          <Td> 0mg </Td>
+          <Td> 0% </Td>
+        </TR>
+        <TR>
+          <Td> sodium </Td>
+          <Td> 220mg </Td>
+          <Td> 9% </Td>
+        </TR>
+        <TR>
+          <Td> total carbhydrate </Td>
+          <Td> 31g </Td>
+          <Td> 10% </Td>
+        </TR>
+        <TR>
+          <Td> Dietry Fiber </Td>
+          <Td> 5g </Td>
+          <Td> 20% </Td>
+        </TR>
+        <TR>
+          <Td> sugars </Td>
+          <Td> 12g </Td>
+          <Td> </Td>
+        </TR>
+        <TR>
+          <Td> sugars alchol </Td>
+          <Td> 0 </Td>
+          <Td> </Td>
+        </TR>
+        <TR>
+          <Td> protien </Td>
+          <Td> 8g </Td>
+          <Td> 8% </Td>
+        </TR>
+        <TR>
+          <Td> Vitamin A </Td>
+          <Td> </Td>
+          <Td> 0% </Td>
+        </TR>
+        <TR>
+          <Td> Vitamin C </Td>
+          <Td> </Td>
+          <Td> 0% </Td>
+        </TR>
+        <TR>
+          <Td> Calicum </Td>
+          <Td> </Td>
+          <Td> 2% </Td>
+        </TR>
+        <TR>
+          <Td> Iron </Td>
+          <Td> </Td>
+          <Td> 10% </Td>
+        </TR>
+        <TR>
+          <Td colspan="3"> *Percent daily Values are based on a 2,000 calories diet. Your diet may be higher or
+            lower depending on your calorie needs </Td>
+
+        </TR>
+
+
+      </TABLE>
+    </div>
+    </div>
+  </section>
+
+  <!-- review-->
+  <div id="revSection" class="Review">
+    <div class="container">
+
+      <h3 class="rev final">Reviews</h3>
+      <div class="fh1">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 final">
+              <div class="pic">
+                <img class="img-fluid" src="projectImages/man-eating-burger.png">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p2">
+                <h4 class="final1">reviewer name</h4>
+                <h5 class="final1">Dahran - Feb 08, 2020 ⭐⭐⭐⭐⭐</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus consequatur aliquid recusandae
+                  animi
+                  alias expedita unde commodi asperiores error. Obcaecati voluptatem autem exercitationem veritatis temporibus
+                  optio corporis quisquam ut. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="feedback">
+      <button class="he4" onclick="show_hide()">Add your review</button>
+      <div class="animation">
+        <div class="hide_review" id="show_review">
+          <form method="GET">
+            <p>Image</p>
+            <p> <input type="file" id="Image" name="picture"> </p>
+            <p>Rate the Food</p>
+            <p><input type="range" id=datalist name="volume" min="0" max="100" step="20" value="20" list="tickmarks">
+              <datalist id="tickmarks">
+                <option value="20"></option>
+                <option value="40"></option>
+                <option value="60"></option>
+                <option value="80"></option>
+                <option value="100"></option>
+              </datalist>
+            </p>
+
+
+
+            <p>Name <input class="input" type="text" name="name" id="name_textbox" placeholder="First and Last name">
+            </p>
+
+            <p style="margin-bottom: 0;">Review</p>
+            <p id="errorMessage">Please type your review</p>
+            <textarea id="review_textbox" name="review" cols="30" rows="10"
+              placeholder="Type your review here max 500 charecters" maxlength="500"></textarea>
+            <p><a id="numOfLitters">0</a><a>/500</a></p>
+            <button class="he5" onclick="reviewbtn()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- contact section -->
+  <section>
+    <div id="contact" class="row g-0 d-flex align-content-start">
+      <div class="contact-right col-lg-6">
+        <div class="contact-info">
+          <p class="phone">phone: +966-13-860-0000</p>
+          <div class="work-hours">
+            <img src="projectImages/clock.png" alt="time">
+            <div>
+              <p>sun-thr 11:00 - 23:00</p>
+              <p>fri-sat 12:00 - 23:00</p>
+            </div>
+          </div>
+          <div class="location">
+            <img src="projectImages/placeholder.png" alt="location">
+            <div>
+              <p>123 KFUPM Students Mall</p>
+              <p>Dhahran 34464</p>
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <div>
+              <p><a class="social" href="https://ar-ar.facebook.com/">Facebook</a>
+            </div>
+
+            <div> <a class="social" href="https://twitter.com/?lang=ar">Twitter</a></div>
+            <div><a class="social" href="https://www.instagram.com/">instgram</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="contact-left col-lg-6">
+
+        <img src="projectImages/map.png" class="contact-img img-fluid">
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer id="footer" class="container">
+    <div class="row">
+      <div class="about col-lg-4">
+        <img src="projectImages/logo-red.png" alt="logo" calss="Blogo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam, recusandae deleniti est blanditiis,
+          voluptatibus porro iste quo voluptatum quibusdam perspiciatis nam laudantium adipisci ut sed?</p>
+      </div>
+      <div class="footer-link col-md-6 col-lg-4">
+        <div class="links">
+          <h2>useful links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#section-four">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="feeds col-lg-4 col-md-6">
+        <h2>instagram feeds</h2>
+        <div class="img-grid">
+          <li class="inspic"><a href="#"><img src="projectImages/meal1.png" alt="meal" class="footermale1"></a></li>
+          <li class="inspic"><a href="#"><img src="projectImages/meal2.png" alt="meal"></a></li>
+          <li class="inspic"><a href="#"><img src="projectImages/meal3.png" alt="meal"></a></li>
+          <li class="inspic"><a href="#"><img src="projectImages/meal4.png" alt="meal"></a></li>
+          <li class="inspic"><a href="#"><img src="projectImages/meal5.png" alt="meal"></a></li>
+          <li class="inspic"><a href="#"><img src="projectImages/meal6.png" alt="meal"></a></li>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+<script>
+  var count = (function () {
+    var counter = 0;
+    return function () { return counter += 1; }
+  })();
+  function card() {
+    document.getElementById("rec0").innerHTML = count();
+  }
+</script>
+<script>
+  function showNavbar(obj) {
+    var toggle = obj.dataset.toggle;
+    if (toggle == "off") {
+      obj.dataset.toggle = "on";
+      document.getElementsByClassName('menu')[0].style.display = 'block';
+      document.getElementsByClassName('inside')[0].style.height = '300px';
+    }
+    else {
+      obj.dataset.toggle = "off";
+      document.getElementsByClassName('menu')[0].style.display = 'none';
+      document.getElementsByClassName('inside')[0].style.height = '100px';
+    }
+  }
+</script>
+<script src="app.js">
+</script>
+
+</html>
